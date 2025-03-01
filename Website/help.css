@@ -1,0 +1,135 @@
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #8697af;
+    text-align: center;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e0e5ec;
+    padding: 20px 50px;
+    box-shadow: inset 8px 8px 16px #c3c7cc, inset -8px -8px 16px #ffffff;
+    border-radius: 12px;
+    margin: 20px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+    color: #222;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #e0e5ec;
+    box-shadow: 5px 5px 10px #c3c7cc, -5px -5px 10px #ffffff;
+    transition: 0.3s ease;
+}
+  
+  .nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Help/Contact Section */
+  .help-section {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .help-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Social Media Links */
+  .social-links {
+    margin-top: 30px;
+  }
+  
+  .social-links a {
+    color: #007BFF;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+  
+    .nav-links a {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .help-section {
+      padding: 20px;
+    }
+  }
